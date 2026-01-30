@@ -6,7 +6,7 @@ http://www.sunybroome.edu/marcom/institutional-identity/
 .__sm .sidebar, .__sm prm-facet, .__xs .sidebar, .__xs prm-facet, .available-facets .section-content .md-chips .md-chip .md-button::before, .multiselect-submit .multiselect-submit-inner, .prm-background, .prm-view-overlay-inner, body, databases .sticking-wrapper, html, md-card .card-content-block, md-dialog md-toolbar:not(.md-menu-toolbar), md-virtual-repeat-container#prm-simple-search .md-autocomplete-suggestions md-divider, prm-atoz-search-bar .simple-search-wrapper .search-options::after, prm-atoz-search-bar .simple-search-wrapper .search-options md-divider, prm-browse-search-bar .simple-search-wrapper .search-options::after, prm-browse-search-bar .simple-search-wrapper .search-options md-divider, prm-featured-results .horizontal-content-container .horizontal-content-control, prm-full-view-cont .recommendations-title::after, prm-full-view-cont .recommendations-title prm-icon, prm-full-view-cont prm-recomendation-item .media-on-hover .pin-button, prm-newspapers-search-bar .simple-search-wrapper .search-options::after, prm-newspapers-search-bar .simple-search-wrapper .search-options md-divider, prm-search-bar .simple-search-wrapper .search-options::after, prm-search-bar .simple-search-wrapper .search-options md-divider, prm-search .ui-blocker, prm-tags-search-bar .simple-search-wrapper .search-options::after, prm-tags-search-bar .simple-search-wrapper .search-options md-divider {
   background: #f5f5f5; border: 0;}
 
-.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {background: transparent;}
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark::after, prm-tags-search-bar, prm-tree-nav prm-spinner .diamond {background: transparent;}
 
 
 md-input-container{padding: 0;}
@@ -213,8 +213,7 @@ md-checkbox ._md-icon, md-checkbox.md-checked ._md-icon{/*background-color: #fff
 md-checkbox.md-checked ._md-container, md-checkbox.md-checked .md-container{color: #005f9c;}
 md-checkbox ._md-icon, md-checkbox .md-icon {border-color: #888;}
 
-md-toolbar.default-toolbar, md-toolbar.default-toolbar:not(.md-menu-toolbar) {background: #ffffff;
-    margin-top: 30px;border-top: 0;}
+
 
 
 
@@ -310,6 +309,18 @@ prm-main-menu[menu-type="full"] .md-button .md-headline, prm-main-menu[menu-type
 	font-weight: 600;font-size: 1.3em;color: #fff;}
 
 md-content.overlay-menu-content {/*background-color: #4a667c;*/}
+
+
+/* Collection Discovery */
+
+/* remove background image from banner*/
+prm-collection-gallery-header .collection-header-inner.has-transparent-topbar {/*background-color: #2b6990;*/ background-size: 1px;}
+
+/* chnage menu background color */
+prm-explore-main .header .transparent-top-bar div:not(.favorites-guest-warning) {background-color: #000;}
+
+/* search bar background */
+md-toolbar.default-toolbar, md-toolbar.default-toolbar:not(.md-menu-toolbar) {background: #fff;}
 
 
 /* libchat */
