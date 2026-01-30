@@ -2,20 +2,6 @@
     "use strict";
     'use strict';
 
-var LocalViewID;
-var LocalViewPath;
-
-var curURL = new URL(window.location.href);
-var vid = curURL.searchParams.get('vid');
-if (vid != '') {
-  LocalViewID = vid;
-  LocalViewPath = '/discovery/custom/' + vid.replace(':', '-');
-  console.log('View variables: ' + LocalViewID + ' and ' + LocalViewPath);
-} else {
-  LocalViewID = '01ALLIANCE_UO:UO';
-  LocalViewPath = '/discovery/custom/01ALLIANCE_UO-UO';
-  console.log('Warning: unable to deduce view variables; defaulting to ' + LocalViewID + ' and ' + LocalViewPath);
-}
 
   //  var app = angular.module('viewCustom', ['angularLoad']);
 
@@ -32,7 +18,7 @@ if (vid != '') {
 
 /***************************************************************/
 
-/*  Test01 view */
+/*  01SUNY_BCC:01SUNY_BCC view */
 
 /*add report a problem*/
   app.controller('prmActionListAfterController', ['$scope', function ($scope) {
@@ -51,7 +37,7 @@ if (vid != '') {
         vm.prmActionCtrl.actionListService.actionsToDisplay.unshift("report_a_problem");
         vm.prmActionCtrl.actionListService.actionsToIndex["report_a_problem"] = 1;
       }
-        var url = "https://sunybroome.libwizard.com/f/report-a-problem?5327305=" + vm.prmActionCtrl.item.pnx.display.title[0] + " (https://suny-bcc.primo.exlibrisgroup.com/discovery/fulldisplay?" + encodeURIComponent("docid=" + vm.prmActionCtrl.item.pnx.control.recordid + "&vid=01SUNY_BCC:TEST01&onCampus=true") + ")";
+        var url = "https://sunybroome.libwizard.com/f/report-a-problem?5327305=" + vm.prmActionCtrl.item.pnx.display.title[0] + " (https://suny-bcc.primo.exlibrisgroup.com/discovery/fulldisplay?" + encodeURIComponent("docid=" + vm.prmActionCtrl.item.pnx.control.recordid + "&vid=01SUNY_BCC:01SUNY_BCC&onCampus=true") + ")";
 
       if (vm.prmActionCtrl.actionListService.onToggle) {
         vm.prmActionCtrl.actionListService.onToggle["report_a_problem"] = function () {
@@ -93,7 +79,7 @@ if (vid != '') {
         vm.prmBriefResultCtrl.upFrontActionsService.requiredUpFrontActionsList[0] = "report_a_problem";
       }
 
-        var url = "https://sunybroome.libwizard.com/f/report-a-problem?5327305=" + vm.prmBriefResultCtrl.item.pnx.display.title[0] + " (https://suny-bcc.primo.exlibrisgroup.com/discovery/fulldisplay?" + encodeURIComponent("docid=" + vm.prmBriefResultCtrl.item.pnx.control.recordid + "&vid=01SUNY_BCC:TEST01&onCampus=true") + ")";
+        var url = "https://sunybroome.libwizard.com/f/report-a-problem?5327305=" + vm.prmBriefResultCtrl.item.pnx.display.title[0] + " (https://suny-bcc.primo.exlibrisgroup.com/discovery/fulldisplay?" + encodeURIComponent("docid=" + vm.prmBriefResultCtrl.item.pnx.control.recordid + "&vid=01SUNY_BCC:01SUNY_BCC&onCampus=true") + ")";
 	
       vm.prmBriefResultCtrl.openTab = function (e, t) {
         e.stopPropagation();
@@ -122,7 +108,7 @@ if (vid != '') {
 
 
 
- // Report a Problem
+ // Old Report a Problem
  // app.controller('ActionContainerAfterController', [function() {
  //     var vm = this;
 //
@@ -135,8 +121,8 @@ if (vid != '') {
   //            var formField = 'https://sunybroome.libanswers.com/form?queue_id=3369&resource=';
   //            formField += permalink;
  //             return formField;
- //         return vm.parentCtrl.hasSearchResults;
- //           console.log('url: ' + window.location.href);
+ //    //     return vm.parentCtrl.hasSearchResults;
+ //     //      console.log('url: ' + window.location.href);
  //         }
  //       }
  //     };
@@ -144,24 +130,9 @@ if (vid != '') {
  // app.component('prmActionContainerAfter', {
  //     bindings: { parentCtrl: '<' },
  //     controller: 'ActionContainerAfterController',
- //     template: '<div id="report-problem" layout="row" layout-align="center center"><a id="problemLink" target="_blank" href="{{$ctrl.getPermalink()}}" title="Report a problem"><img src="custom/01SUNY_BCC-TEST01/img/warning.png">&nbsp;&nbsp;Report a problem with this item</a></div>'
+ //     template: '<div id="report-problem" layout="row" layout-align="center center"><a id="problemLink" target="_blank" href="{{$ctrl.getPermalink()}}" title="Report a problem"><img src="custom/01SUNY_BCC-TEST01/img/warning.png">&nbsp;&nbsp;Report a new problem with this item</a></div>'
   //});
 
-
-// app.component('prmServiceDetailsAfter', {
-//          template: '<show-pnx></show-pnx>'
-//        });
-
-//angular.module('showPNX', []).component('show-pnx', {
- // bindings: { parentCtrl: '<' },
-//  controller: function controller($scope, $http, $element) {
-//    this.$onInit = function () {
-
- //	var pnx= $scope.$parent.$parent.$parent.$parent.$ctrl.item.pnx;
-//	var recordid = $scope.$parent.$ctrl.item.pnx.control.recordid[0];
-//	// console.log("PNX: "+ recordid);
-//	return recordid;
-//	}}}
 
 
 
