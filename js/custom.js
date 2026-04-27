@@ -102,36 +102,6 @@
 
 
 
-/*add report a problem - adapted from Northeastern University Library, then by SUNY Upstate (Go Heidi) */
- 
-
-
-
-
- // Old Report a Problem
- // app.controller('ActionContainerAfterController', [function() {
- //     var vm = this;
-//
- //     this.$onInit = function(){
- //       {
- //         vm.getPermalink = getPermalink;
-//
-  //        function getPermalink() {
- //             var permalink = encodeURIComponent(window.location.href);
-  //            var formField = 'https://sunybroome.libanswers.com/form?queue_id=3369&resource=';
-  //            formField += permalink;
- //             return formField;
- //    //     return vm.parentCtrl.hasSearchResults;
- //     //      console.log('url: ' + window.location.href);
- //         }
- //       }
- //     };
- // }]);
- // app.component('prmActionContainerAfter', {
- //     bindings: { parentCtrl: '<' },
- //     controller: 'ActionContainerAfterController',
- //     template: '<div id="report-problem" layout="row" layout-align="center center"><a id="problemLink" target="_blank" href="{{$ctrl.getPermalink()}}" title="Report a problem"><img src="custom/01SUNY_BCC-TEST01/img/warning.png">&nbsp;&nbsp;Report a new problem with this item</a></div>'
-  //});
 
 
 
@@ -246,25 +216,7 @@ function hide_show_other_institutions()
   angular.element(document.querySelector('prm-alma-other-members-after')).after(angular.element(document.querySelector('prm-alma-other-members md-tabs')));
 }
 
-/* Google Tag Manager */
-const gtmId = 'GTM-MPR88PV'
-function addGTM(doc) {
- const newScript = doc.createElement('script')
- const scriptText = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${gtmId}');`
- newScript.innerHTML = scriptText
- doc.head.append(newScript)
-  
- const noscript = doc.createElement('noscript')
- const noscriptText = `&lt;iframe src="//www.googletagmanager.com/ns.html?id=${gtmId}"
-height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;`
- noscript.innerHTML = noscriptText
- doc.body.insertBefore(noscript, doc.body.firstChild)
-}
-addGTM(document)
+
 
 
 

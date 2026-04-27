@@ -68,7 +68,7 @@ prm-search-bar .layout-fill {/*margin-top: 20px; */}
 
 prm-atoz-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-browse-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-newspapers-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-search-bar .search-switch-buttons .md-button.switch-to-advanced, prm-tags-search-bar .search-switch-buttons .md-button.switch-to-advanced {color:#000;} 
 
-prm-search-bar, prm-atoz-search-bar, prm-journals-search-bar, prm-browse-search-bar, prm-tags-search-bar {background-color: #eee; border-top: 10px solid #eeb310;} 
+prm-search-bar, prm-atoz-search-bar, prm-journals-search-bar, prm-newspapers-search-bar, prm-browse-search-bar, prm-tags-search-bar {background-color: #eee; border-top: 10px solid #eeb310;} 
 
 @media screen and (max-width: 599px) {
     prm-search-bar .search-wrapper.layout-row>div[flex]:first-of-type {
